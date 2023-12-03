@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Who am I?</title>
+    <link rel="stylesheet" href="/public/reset.css" />
+    <style>
+      body {
+        background-color: beige;
+      }
+      #headerBox {
+        width: 100%;
+        background-color: white;
+        opacity: 40%;
+      }
+      #headerBox > ul {
+        text-align: right;
+      }
+      #headerBox > ul > li {
+        list-style: none;
+        display: inline-block;
+        width: 25%;
+        height: 10vh;
+        text-align: center;
+        line-height: 10vh;
+      }
+      #headerBox > ul > li:nth-child(1) {
+        list-style: none;
+        display: inline-block;
+        width: 15%;
+        height: 10vh;
+        text-align: center;
+        line-height: 10vh;
+        background-color: black;
+      }
+      #headerBox > ul > li > a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      #headerBox > ul > li > a:hover {
+        font-weight: bold;
+        color: aqua;
+        animation-duration: 1s;
+        transform: scale(1.05);
+        transition-duration: 0.1s;
+      }
+      #section {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+      }
+      #section > #content {
+        width: 100%;
+      }
+      #section > #content > ._introduceBox {
+        width: 100%;
+        height: 600px;
+        padding: 0.5%;
+      }
+      #section > #content > ._introduceBox:nth-child(1) {
+        display: grid;
+        grid-auto-flow: column;
+      }
+      #section > #content > ._introduceBox > ._introduceBoxPicture {
+        width: fit-content;
+        height: fit-content;
+      }
+      #section > #content > ._introduceBox > ._introduceBoxPicture img {
+        width: 80%;
+        margin: auto;
+        display: block;
+      }
+      #section > #content > ._introduceBox > ._introduceTable {
+        width: 100%;
+        display: inline-block;
+        border-collapse: collapse;
+        margin: auto;
+      }
+      #section > #content > ._introduceBox > ._introduceTable td {
+        border-bottom: 1px solid black;
+        padding: 3%;
+      }
+      #section > #content > ._introduceBox > ._introduceTable td:nth-child(1) {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="headerBox">
+      <ul>
+        <li><img src="" alt="Logo image" /></li>
+        <li><a href="#intro">자기소개</a></li>
+        <li><a href="#post">포스트</a></li>
+        <li><a href="#portfolio">포트폴리오</a></li>
+      </ul>
+    </div> -->
+    <div id="section">
+      <div id="headerBox">
+        <ul>
+          <li>
+            <a href="#home"><img src="" alt="Logo image" /></a>
+          </li>
+          <li><a href="#intro">자기소개</a></li>
+          <li><a href="#post">포스트</a></li>
+          <li><a href="#portfolio">포트폴리오</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <!-- #headerBox End -->
+        <div class="_introduceBox">
+          <div class="_introduceBoxPicture">
+            <img
+              src="D:\Personal_Project\WhoamI-nodejs\static\images\Sample_Pic_1.PNG"
+            />
+          </div>
+          <table class="_introduceTable">
+            <tr>
+              <td>이름</td>
+              <td>권승구</td>
+            </tr>
+            <tr>
+              <td>학력</td>
+              <td>잠실고등학교 졸업(2015.02)<br />강남대학교 졸업(2020.02)</td>
+            </tr>
+            <tr>
+              <td>경력</td>
+              <td>
+                제로바코코리아(2020.05 ~ 2022.08) (RPA 개발자)<br />투비웨이(2022.08
+                ~ 2023.11) (RPA 개발자)
+              </td>
+            </tr>
+            <tr>
+              <td>Github</td>
+              <td>
+                <a
+                  href="https://github.com/Seunggu-K?tab=repositories"
+                  target="_blank"
+                  >Github 링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>교육이력</td>
+              <td>파이썬과 오픈소스를 활용한 AI&딥러닝(2020.10 ~ 2020.11)</td>
+            </tr>
+            <tr>
+              <td>자격증</td>
+              <td>PCCE 파이썬(2023.10)</td>
+            </tr>
+          </table>
+          <!-- <table class="_introduceTable">
+            <tr>
+                
+              <td>이름</td>
+              <td>권승구</td>
+            </tr>
+            <tr>
+                
+              <td>학력</td>
+              <td>잠실고등학교 졸업(2015.02)<br />강남대학교 졸업(2020.02)</td>
+            </tr>
+            <tr>
+                
+              <td>경력</td>
+              <td>
+                제로바코코리아(2020.05 ~ 2022.08) (RPA 개발자)<br />투비웨이(2022.08
+                ~ 2023.11) (RPA 개발자)
+              </td>
+            </tr>
+            <tr>
+                
+              <td>Github</td>
+              <td>
+                <a
+                  href="https://github.com/Seunggu-K?tab=repositories"
+                  target="_blank"
+                  >Github 링크</a
+                >
+              </td>
+            </tr>
+            <tr>
+                
+              <td>교육이력</td>
+              <td>파이썬과 오픈소스를 활용한 AI&딥러닝(2020.10 ~ 2020.11)</td>
+            </tr>
+            <tr>
+                <td rowspan="6"><img src="D:\Personal_Project\WhoamI-nodejs\static\images\Sample_Pic_1.PNG"></img></td>
+              <td>자격증</td>
+              <td>PCCE 파이썬(2023.10)</td>
+            </tr>
+          </table> -->
+        </div>
+        <!-- ._introduceBox End -->
+        <div class="_introduceBox">
+          <p>자기 설명</p>
+        </div>
+        <!-- ._introduceBox End -->
+      </div>
+      <!-- #content End -->
+    </div>
+    <!-- #section End -->
+  </body>
+</html>
