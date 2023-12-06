@@ -1,0 +1,93 @@
+#section > #content > ._postTitleBox {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+  background-color: antiquewhite;
+}
+
+#section > #content > ._postContentBox > ._postPath {
+  width: 100%;
+  height: 30px;
+}
+
+#section > #content > ._postContentBox > ._postBoxList {
+  width: 100%;
+  max-height: fit-content;
+  margin-top: 30px;
+}
+
+#section > #content > ._postContentBox > ._postBoxList ._postBox {
+  width: 20%;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 4%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#section > #content > ._postContentBox > ._postBoxList ._postBox:hover {
+  background-color: black;
+  opacity: 0.3;
+}
+
+#section
+  > #content
+  > ._postContentBox
+  > ._postBoxList
+  ._postBox
+  > ._postBoxDiv {
+  /* display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+#section
+  > #content
+  > ._postContentBox
+  > ._postBoxList
+  ._postBox
+  > ._postBoxDiv
+  > ._postDivision {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-size: 40px;
+}
+
+#section
+  > #content
+  > ._postContentBox
+  > ._postBoxList
+  ._postBox
+  > ._postBoxDiv
+  > ._postTitle {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  line-height: 120px;
+}
+
+#section
+  > #content
+  > ._postContentBox
+  > ._postBoxList
+  ._postBox
+  > ._postBoxDiv
+  > ._postRegDate {
+  width: 100%;
+  height: 10%;
+  text-align: right;
+  font-size: 13px;
+}

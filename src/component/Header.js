@@ -14,7 +14,7 @@ const Header = () => {
             <Link to="/introduce">자기소개</Link>
           </li>
           <li>
-            <Link to="/post">포스트</Link>
+            <Link to="/posts/1">포스트</Link>
           </li>
           <li>
             <Link to="/portfolio">포트폴리오</Link>

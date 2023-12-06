@@ -3,6 +3,10 @@ html {
 }
 body {
   background-color: beige;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
 }
 #headerBox {
   width: 100%;
@@ -54,11 +58,16 @@ body {
 #section > #content > ._introduceBox {
   width: 100%;
   height: 600px;
-  padding: 0.5%;
 }
 #section > #content > ._introduceBox:nth-child(1) {
   display: grid;
   grid-auto-flow: column;
+}
+#section > #content > ._introduceBox:nth-child(odd) {
+  background-color: white;
+}
+#section > #content > ._introduceBox:nth-child(even) {
+  background-color: gray;
 }
 #section > #content > ._introduceBox > ._introduceBoxPicture {
   width: fit-content;
@@ -66,7 +75,7 @@ body {
 }
 #section > #content > ._introduceBox > ._introduceBoxPicture img {
   width: 80%;
-  margin: auto;
+  margin: 5% 10%;
   display: block;
 }
 #section > #content > ._introduceBox > ._introduceTable {
@@ -81,4 +90,10 @@ body {
 }
 #section > #content > ._introduceBox > ._introduceTable td:nth-child(1) {
   width: 25%;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: cadetblue;
 }

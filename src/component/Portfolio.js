@@ -17,10 +17,10 @@ let data = [
   },
 ]; // 테스트용 포트폴리오 데이터
 
-const Portfolio = () => {
-  const { id } = useParams();
-  console.log("포트폴리오 ID : " + { id });
-  console.log(data);
+const Portfolio = (props) => {
+  console.log("Portfolio 내부 Props : " + props);
+  const { id } = props[0];
+  console.log("Portfolio 내부 포트폴리오 ID : " + { id });
   return (
     <>
       <div id="portfolioAlert">

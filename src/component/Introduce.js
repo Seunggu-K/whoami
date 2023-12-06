@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Introduce = () => {
   return (
     <div id="content">
       <div className="_introduceBox">
         <div className="_introduceBoxPicture">
-          <img src={process.env.PUBLIC_URL + "/Sample_Pic_1.PNG"} />
+          <img
+            src={process.env.PUBLIC_URL + "/Sample_Pic_1.PNG"}
+            alt="Profile pic"
+          />
         </div>
         <table className="_introduceTable">
           <tbody>
@@ -28,14 +33,18 @@ const Introduce = () => {
               </td>
             </tr>
             <tr>
-              <td>Github</td>
+              <td>링크</td>
               <td>
-                <a
-                  href="https://github.com/Seunggu-K?tab=repositories"
+                <Link
+                  to="https://github.com/Seunggu-K?tab=repositories"
                   target="_blank"
                 >
-                  Github 링크
-                </a>
+                  Github
+                </Link>
+                <b> / </b>
+                <Link to="https://kaggle.com/moonlight" target="_blank">
+                  Kaggle
+                </Link>
               </td>
             </tr>
             <tr>
